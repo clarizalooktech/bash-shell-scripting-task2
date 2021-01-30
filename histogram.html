@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day (Converted to UTC Timezone)');
+      data.addColumn('number', 'Kilobytes Received');
+
+      data.addRows([
+[[03, 09, 27], 42477 ],
+[[03, 09, 55], 19710 ],
+[[03, 10, 09], 15864 ],
+[[03, 10, 37], 20296 ],
+[[03, 10, 58], 19807 ],
+[[03, 12, 27], 14770 ],
+[[03, 13, 28], 1495 ],
+[[03, 13, 42], 20247 ],
+[[03, 13, 45], 12030 ],
+[[03, 13, 46], 19769 ]
+      ]);
+
+      var options = {
+        title: 'Kilobytes Received This the Time of the Day',
+        height: 450
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+		          ['URL', 'Number of Hits'],
+['/cshelp/cshelp-highlight/hljs.css', 1], 
+['/favicon.ico', 1], 
+['/images/csmarks/info.gif', 1], 
+['/newcss/CSM-SCROLLRSS.js', 1], 
+['/newcss/designs_themes_faculty_ems.css', 1], 
+['/newcss/graphics/bullet-link.gif', 1], 
+['/newcss/mysource_files/arrow-footerlink.gif', 1], 
+['/newcss/mysource_files/footer-lastcol-toparrow.gif', 1], 
+['/newcss/visualid_scripts_id-core_r218.js', 1], 
+['/robots.txt', 2], 
+['/run/csforum', 2], 
+['/run/csmarks', 3], 
+['/run/cssubmit', 9], 
+['/run/help1001', 16], 
+['/run/help2002', 6], 
+['/run/help2200', 5], 
+['/run/help3001', 2], 
+['/run/help3002', 1], 
+['/run/help3003', 1], 
+['/run/help3401', 1], 
+['/run/help3403', 2], 
+['/run/icpcforum', 1] 
+         ]);
+
+        var options = {
+          chart: {
+            title: 'Top Trending URLS',
+            subtitle: 'Based from 60 datasets',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+

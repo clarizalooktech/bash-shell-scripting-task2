@@ -1,4 +1,4 @@
-This project is an example to showcase my knowledge in shell scripting and demonstrating the step by step process of data cleaning, data manipulation, analysis and deriving insights from data through visualization in an html format.
+This project is an example to showcase my knowledge in shell scripting and demonstrating the step by step process of data cleaning, data manipulation, analysis and deriving insights from a data large dataset. Visualizations are generated in html formats.
 
 To view the shell scripts:
 

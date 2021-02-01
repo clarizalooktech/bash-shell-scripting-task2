@@ -2,5 +2,5 @@ This project is an example to showcase my knowledge in shell scripting and demon
 
 To view the shell scripts:
 
-1. Click the "plothistogram.sh" file.
-2. Download the "html-file.zip" file on your desktop and upzip to see html file.
+1. Click the "plothistogram.sh" and "ploturltrend.sh" files.
+2. To view the output of the program, check the html files (or jpeg files)
